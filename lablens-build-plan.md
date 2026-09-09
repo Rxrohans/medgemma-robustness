@@ -83,9 +83,11 @@ lablens/
 └── app/                # Phase 8, Gradio
 ```
 
-### 0.4 LOINC account (needed in Phase 7)
+### 0.4 LOINC account (Phase 7 — no rush)
 
-Register free at loinc.org. Approval is not instant. Do it now so the download is ready when you need it.
+Register free at loinc.org. **There is no approval queue** — create the account, accept the terms, download the table immediately. Organization affiliation is requested but is demographic data only; it gates nothing and is not verified. "Independent Researcher" is a fine answer.
+
+Because there is no waiting period, this is *not* a Phase 0 task. Do it the day you start Phase 7.
 
 ---
 
@@ -567,10 +569,11 @@ Drop Phase 7 (FHIR/LOINC) first. Phases 2, 4, and 5 are the project. A generator
 
 ## Start now
 
-1. Create the Hugging Face account and verify email (30-day clock).
+1. Create the Hugging Face account and verify email (30-day clock — the only genuinely urgent item).
 2. Accept the MedGemma terms on the model page.
-3. Phone-verify Kaggle.
-4. Register for LOINC.
-5. Create the GitHub repo.
+3. Phone-verify Kaggle, then add `HF_TOKEN` as a notebook secret.
+4. Create the GitHub repo and push.
+
+LOINC is not on this list: it has no approval queue, so it costs nothing to defer to Phase 7.
 
 Then Phase 1 tomorrow.
