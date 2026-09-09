@@ -1,6 +1,9 @@
 # Personal working notes, not part of the project
 build-plan.md
 
+# Upload bundles, rebuilt from data/ on demand
+*.zip
+
 # Generated data. Regenerate with `python -m generator.generate`, never commit.
 data/synthetic/
 data/mendeley/
