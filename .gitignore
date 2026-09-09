@@ -1,0 +1,30 @@
+# Generated data — regenerate with `python -m generator.generate`, never commit
+data/synthetic/
+data/mendeley/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Raw model outputs are cached and large; commit only aggregated results/
+results/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Secrets — HF tokens live in Kaggle Secrets, never in the repo
+.env
+*.token
+kaggle.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

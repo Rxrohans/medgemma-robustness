@@ -1,0 +1,31 @@
+# LabLens dependencies.
+#
+# Split deliberately: the generator and evaluation harness run on CPU locally
+# (Windows, no GPU). Only extraction needs a GPU, and that runs on Kaggle.
+# Keeping that separation means you can develop 90% of the project offline.
+
+# --- Generator (local, CPU) ---
+jinja2>=3.1
+playwright>=1.40          # then: playwright install chromium
+                          # replaces weasyprint+pdf2image — no GTK/poppler needed
+pillow>=10.0
+opencv-python>=4.9
+numpy>=1.26
+
+# --- Evaluation (local, CPU) ---
+rapidfuzz>=3.6            # test-name fuzzy matching + synonym table
+pandas>=2.2
+matplotlib>=3.8
+
+# --- Extraction (Kaggle GPU only — do NOT install locally) ---
+# transformers>=4.50      # 4.50+ required for Gemma 3 / MedGemma 1.5
+# accelerate>=0.30
+# bitsandbytes>=0.43      # 4-bit NF4; needs compute capability >= 6.0
+# torch                   # preinstalled on Kaggle
+
+# --- Phase 4 baseline 3 (classical OCR) ---
+# pytesseract>=0.3.10     # also needs the tesseract binary
+
+# --- Phase 8 demo (Hugging Face Space only) ---
+# gradio>=4.44
+# spaces
