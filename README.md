@@ -80,7 +80,21 @@ Research and engineering demo. **Not for clinical use.** No diagnostic claims ar
 made and none should be inferred. Any output requires independent verification
 before it is relied upon for any purpose.
 
-## Data attribution
+## Licensing
 
-Mendeley Clinical Laboratory Test Reports (DOI `10.17632/bygfmk4rx9.2`),
-260 reports from 24 laboratories in Egypt, licensed CC BY 4.0.
+Three different terms apply to three different things here, and they are not
+interchangeable:
+
+| What | Terms |
+|---|---|
+| **This repository's code** | [Apache License 2.0](LICENSE) |
+| **MedGemma 1.5 4B / Gemma 3 4B weights** | [Health AI Developer Foundations terms](https://developers.google.com/health-ai-developer-foundations/terms) — gated, accept on the model page |
+| **Mendeley Clinical Laboratory Test Reports** | CC BY 4.0 — attribution required |
+
+The Apache-2.0 grant covers the generator, the evaluation harness and the app in
+this repo. It does **not** grant any rights to the model weights, which remain
+under Google's terms and must be obtained from Hugging Face directly.
+
+Dataset citation: *Clinical Laboratory Test Reports*, DOI
+[`10.17632/bygfmk4rx9.2`](https://doi.org/10.17632/bygfmk4rx9.2) — 260 reports
+from 24 laboratories in Egypt, CC BY 4.0.
