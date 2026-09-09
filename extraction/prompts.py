@@ -1,7 +1,7 @@
-﻿"""Phase 3.1 - versioned prompts.
+﻿"""Versioned extraction prompts.
 
-Keep every version. A prompt-iteration table in the README is real evidence
-of methodology. Record which prompt produced which result.
+Keep every version. MedGemma is more prompt-sensitive than base Gemma 3, so
+which prompt produced which number is part of the result, not a detail.
 """
 
 PROMPT_V1 = """"""

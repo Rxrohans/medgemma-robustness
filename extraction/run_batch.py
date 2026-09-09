@@ -1,5 +1,6 @@
-﻿"""Phase 3.3 - batch runner.
+﻿"""Batch inference runner.
 
-Cache by (image_hash, model_id, prompt_version); skip anything already in
-results/raw/. Write to disk as you go - Kaggle sessions die at 9 hours.
+Caches by (image_hash, model_id, prompt_version) and skips anything already
+present in results/raw/. Writes each result to disk as it lands, because Kaggle
+sessions are capped at 9 hours and a lost session must not cost a rerun.
 """

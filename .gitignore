@@ -1,4 +1,7 @@
-# Generated data — regenerate with `python -m generator.generate`, never commit
+# Personal working notes, not part of the project
+build-plan.md
+
+# Generated data. Regenerate with `python -m generator.generate`, never commit.
 data/synthetic/
 data/mendeley/
 *.png
@@ -18,7 +21,7 @@ env/
 *.egg-info/
 .ipynb_checkpoints/
 
-# Secrets — HF tokens live in Kaggle Secrets, never in the repo
+# Secrets. HF tokens live in Kaggle Secrets, never in the repo.
 .env
 *.token
 kaggle.json

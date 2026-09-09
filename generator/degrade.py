@@ -1,6 +1,7 @@
-﻿"""Phase 2.5 - independently controllable degradation axes.
+﻿"""Independently controllable image degradation.
 
-Each axis takes a numeric parameter so Phase 5 can sweep it.
+Each axis takes a numeric parameter so it can be swept one at a time while the
+others stay clean. Compounding them is a separate, deliberate experiment.
 """
 
 

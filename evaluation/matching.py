@@ -1,5 +1,6 @@
-﻿"""Phase 4.1 - align predicted tests to ground truth.
+﻿"""Align predicted tests to ground truth.
 
-Report metrics both with and without the synonym table; the gap is itself a
-finding about whether the model normalises terminology.
+Reports metrics both with and without the synonym table. The gap between the
+two is itself a finding: it measures whether the model normalises terminology
+or copies what is printed.
 """

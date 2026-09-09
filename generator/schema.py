@@ -36,7 +36,7 @@ class ReportMeta:
 
 @dataclass
 class Test:
-    test_name: str          # as printed — synonyms (SGPT vs ALT) are the point
+    test_name: str          # as printed; synonyms (SGPT vs ALT) are the point
     value: float | str      # str for qualitative results ("Negative", "Trace")
     unit: str
     panel: Panel
@@ -44,6 +44,20 @@ class Test:
     ref_high: float | None = None
     ref_text: str = ""      # used when the range is not two numbers
     flag: Flag = ""
+    decimals: int = 1       # how many places this lab prints for this analyte
+
+    @property
+    def printed_value(self) -> str:
+        """The exact string the template renders.
+
+        Templates must use this rather than formatting the float themselves.
+        If a template printed "13.4" while the ground truth held 13.40, every
+        downstream comparison would inherit a formatting artefact that has
+        nothing to do with the model's reading of the page.
+        """
+        if isinstance(self.value, str):
+            return self.value
+        return f"{self.value:.{self.decimals}f}"
 
 
 @dataclass
@@ -57,7 +71,7 @@ class Report:
         return asdict(self)
 
 
-# The subset of fields the model is asked to produce, and that Phase 4 scores.
+# The subset of fields the model is asked to produce, and that scoring compares.
 # Keep this in sync with the schema embedded in extraction/prompts.py.
 SCORED_TEST_FIELDS = ("test_name", "value", "unit", "ref_low", "ref_high",
                       "ref_text", "flag")
