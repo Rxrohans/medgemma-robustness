@@ -1,4 +1,4 @@
-# LabLens — Build Plan
+# MedGemma Robustness — Build Plan
 
 **A robustness study of MedGemma 1.5 4B on medical lab report extraction.**
 
@@ -61,7 +61,7 @@ Free accounts can host ZeroGPU Spaces only if the **account is more than 30 days
 Create it now, even empty. Commit from day one so the history shows the work.
 
 ```
-lablens/
+medgemma-robustness/
 ├── README.md
 ├── requirements.txt
 ├── generator/          # Phase 2

@@ -1,13 +1,15 @@
-# LabLens
+# MedGemma Robustness
 
-**A robustness study of MedGemma 1.5 4B on medical lab report extraction.**
+**How far can you degrade a lab report photo before a 4B medical vision-language
+model stops reading it correctly?**
 
-Independently measuring how a 4B medical vision-language model extracts structured
-data from lab reports — on contamination-free synthetic data, across a controlled
-degradation sweep, against a base-model and a classical-OCR baseline.
+An independent evaluation of MedGemma 1.5 4B on lab report extraction: a synthetic
+benchmark with ground truth by construction, a field-level evaluation harness, and
+a controlled sweep across seven image-degradation axes to find the failure
+threshold on each.
 
 > 🚧 **Status: in progress.** Phase 0 (setup) complete. See
-> [lablens-build-plan.md](lablens-build-plan.md) for the full plan.
+> [build-plan.md](build-plan.md) for the full plan.
 
 ---
 

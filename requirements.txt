@@ -1,4 +1,4 @@
-# LabLens dependencies.
+# medgemma-robustness dependencies.
 #
 # Split deliberately: the generator and evaluation harness run on CPU locally
 # (Windows, no GPU). Only extraction needs a GPU, and that runs on Kaggle.
